@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QQ音乐</title>
+    <link rel="stylesheet" href="qq-music.css">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+    <!-- navigation -->
+    <div class="navigation">
+        <div class="nav-section">
+            <h1 class="music-logo">
+                <a href="#" class="active">
+                    <img src="QQ-menu-logo.png" alt="QQ-menu-logo" class="qq-music-logo">
+                </a>
+            </h1>
+            <ul class="nav" role="nav">
+                <!-- 音乐馆 -->
+                 <li class="item">
+                    <a href="#" class="top-nav-link top-nav-link-current" title="音乐馆">音乐馆</a>
+                 </li>
+                 <!-- 我的音乐 -->
+                 <li class="item">
+                    <a href="#" class="top-nav-link" title="我的音乐">我的音乐</a>
+                 </li>
+                 <!-- 客户端 -->
+                 <li class="item">
+                    <a href="#" class="top-nav-link" title="客户端">客户端</a>
+                 </li>
+                 <!-- 开放平台 -->
+                 <li class="item">
+                    <a href="#" class="top-nav-link" title="开放平台">开放平台</a>
+                 </li>
+                 <!-- VIP -->
+                 <li class="item">
+                    <a href="#" class="top-nav-link" title="VIP">VIP</a>
+                 </li>
+            </ul>
+            <ul class="mod-top-subnav">
+                <li class="top-subnav-item">
+                    <a href="#" aria-current="page" class="top-subnav-link top-subnav-linnk-current" title="首页">首页</a>
+                </li>
+                <li class="top-subnav-item">
+                    <a href="#" class="top-subnav-link" title="歌手">歌手</a>
+                </li>
+                <li class="top-subnav-item">
+                    <a href="#" class="top-subnav-link" title="新碟">新碟</a>
+                </li>
+                <li class="top-subnav-item">
+                    <a href="#" class="top-subnav-link" title="排行榜">排行榜</a>
+                </li>
+                <li class="top-subnav-item">
+                    <a href="#" class="top-subnav-link" title="分类歌单">分类歌单</a>
+                </li>
+                <li class="top-subnav-item">
+                    <a href="#" class="top-subnav-link" title="雷达">雷达</a>
+                </li>
+                <li class="top-subnav-item">
+                    <a href="#" class="top-subnav-link" title="MV">MV</a>
+                </li>
+                <li class="top-subnav-item">
+                    <a href="#" class="top-subnav-link" title="数字专辑">数字专辑</a>
+                </li>
+            </ul>
+            <div class="mod-top-search" role="search">
+                <div class="mod-search-input">
+                    <input type="text" class="search-input-input" placeholder="搜索音乐、MV、歌单、用户" value>
+                    <button class="search-input-btn">
+                        <i class="icon-search sprite"></i>
+                        <img src="search.png" alt="" class="search-logo">
+                    </button>
+                </div>
+            </div>
+            <div class="header-opt">
+                <span class="mod-top-login">
+                    <a href="#" class="top-login-link">登录</a>
+                    <div class="js-vip-select-mod mod-select mod-select-green mod-select-open">
+                        <a href="#" class="select-choose">
+                            开通VIP
+                        </a>
+                        <ul class="select-box">
+                            <li class="select-item" title="开通超级会员">开通超级会员</li>
+                            <li class="select-item" title="开通绿钻豪华版">开通绿钻豪华版</li>
+                        </ul>
+                    </div>
+                    <div class="mod-select mod-select-pay">
+                        <a href="#" class="select-choose">
+                            充值
+                        </a>
+                        <ul class="select-box">
+                            <li class="select-item" title="乐币用途： 用于购买数字专辑、支持明星打榜、TME Live等">购买乐币</li>
+                            <li class="select-item" title="饭票可用于购买直播不同产品和服务，包括但不限于虚拟礼物、点歌和身份特权等。">
+                                充值饭票
+                                <ul class="select-sub">
+                                    <li class="select-sub-item">开具发票</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </div>
+     
+    <!-- 歌单推荐 -->
+    <div class="mod_index mod_index--hot mod_slide_box mod_bg" id="content">
+        <div class="section_inner">
+            <div class="index_hd">
+                <h2 class="index_tit">
+                    歌 单 推 荐
+                </h2>
+            </div>
+            <div class="mod_index_tab">
+                <a class="index_tab_item index_tab_item--current">为你推荐</a>
+                <a class="index_tab_item ">网络歌曲</a>
+                <a class="index_tab_item ">KTV热歌</a>
+                <a class="index_tab_item ">经典国语</a>
+                <a class="index_tab_item">官方歌单</a>
+                <a class="index_tab_item ">情歌</a>
+            </div>
+            <div class="mod_playlist mod_slide">
+                <ul class="playlist_list slide_list" style="left: 0%;">
+                    <li class="playlist_item">
+                        <div class="playlist_item_box">
+                            <div class="playlist_cover mod_cover">
+                                <a href="#">
+                                    <img class="playlist_pic" src="one.webp" alt="你印象中听的第一首周
+                                    杰伦是? ">
+                                    <i class="mod_cover_mask"></i>
+                                    <i class="mod_cover_icon_play"></i>
+                                </a>
+                            </div>
+                            <h4 class="playlist_title">
+                                <span class="playlist_title_txt">
+                                    <a href="#">你印象中听的第一首周杰伦是？</a>
+                                </span>
+                            </h4>
+                            <div class="playlist_other">播放量:25.3万</div>
+                        </div>
+                    </li>
+                    <li class="playlist_item playlist_item--even">
+                        <div class="playlist_item_box">
+                            <div class="playlist_cover mod_cover">
+                                <a href="#">
+                                    <img class="playlist_pic" src="two.webp" alt="乘着「热门风」解锁别样旅途 」">
+                                    <i class="mod_cover_mask"></i>
+                                    <i class="mod_cover_icon_play"></i>
+                                </a>
+                            </div>
+                            <h4 class="playlist_title">
+                                <span class="playlist_title_txt"> 
+                                    <a href="#">乘着「热门风」解锁别样旅途</a>
+                                </span>
+                            </h4>
+                            <div class="playlist_other">播放量:24.5万</div>
+                        </div>
+                    </li>
+                    <li class="playlist_item">
+                        <div class="playlist_item_box">
+                            <div class="playlist_cover mod_cover">
+                                <a href="#">
+                                    <img class="playlist_pic" src="three.webp" alt="【抖音热门BGM】好听到脚">
+                                    <i class="mod_cover_mask"></i>
+                                    <i class="mod_cover_icon_play"></i>
+                                </a>
+                            </div>
+                            <h4 class="playlist_title">
+                                <span class="playlist_title_txt">
+                                    <a href="#">【抖音热门BGM】好听到跺脚</a>
+                                </span>
+                            </h4>
+                            <div class="playlist_other">播放量:1537.9万</div>
+                        </div>
+                    </li>
+                    <li class="playlist_item playlist_item--even">
+                        <div class="playlist_item_box">
+                            <div class="playlist_cover mod_cover">
+                                <a href="#">
+                                    <img class="playlist_pic" src="four.webp" a1t="一听就爱上的「热歌精选」">
+                                    <i class="mod_cover_mask"></i>
+                                    <i class="mod_cover_icon_play"></i>
+                                </a>
+                            </div>
+                            <h4 class="playlist_title">
+                                <span class="playlist_title_txt">
+                                    <a href="#">一听就爱上「热歌精选」</a>
+                                </span>
+                            </h4>
+                            <div class="playlist_other">播放量:58.6万</div>
+                        </div>
+                    </li>
+                    <li class="playlist_item">
+                        <div class="playlist_item_box">
+                            <div class="playlist_cover mod_cover">
+                                <a href="#">
+                                    <img class="playlist_pic" src="five.webp" alt="抖音热歌：在线循环一整天">
+                                    <i class="mod_cover_mask"></i>
+                                    <i class="mod_cover_icon_play"></i>
+                                </a>
+                            </div>
+                            <h4 class="playlist_title">
+                                <span class="playlist_title_txt">
+                                    <a href="#">抖音热歌：在线循环一整天</a>
+                                </span>
+                            </h4>
+                            <div class="playlist_other">播放量:3532.1万</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 新歌首发 -->
+    <div class="mod_index mod_index--song mod_slide_box mod_bg" id="content">
+        <div class="section_inner">
+            <div class="index_hd">
+                <h2 class="index_tit">
+                    新 歌 首 发
+                </h2>
+            </div>
+            <a class="mod_btn">
+                <i class="mod_btn_icon_play"></i>
+                播放全部
+            </a>
+            <div class="mod_index_tab">
+                <a class="index_tab_item index_tab_item--current">最新</a>
+                <a class="index_tab_item">内地</a>
+                <a class="index_tab_item">港台</a>
+                <a class="index_tab_item">欧美</a>
+                <a class="index_tab_item">韩国</a>
+                <a class="index_tab_item">日本</a>
+            </div>
+            <div class="mod_debutlist mod_slide">
+                <div class="slide_list" style="left: 0%;">
+                    <ul class="debutlist_list">
+                        <li class="debutlist_item">
+                            <div class="debutlist_item_box">
+                                <a href="#" class="debutlist_link mod_cover">
+                                    <img src="1.webp" alt="发财歌" class="debutlist_pic">
+                                    <i class="mod_cover_mask"></i>
+                                    <i class="mod_cover_icon_play"></i>
+                                </a>
+                                <div class="debutlist_cont">
+                                    <h3 class="debutlist_song">
+                                        <a href="#">发财歌</a>
+                                    </h3>
+                                    <p  class="debutlist_author">
+                                        <a href="#" class="c_tx_thin" title="黄龄">黄龄</a>
+                                    </p>
+                                </div>
+                                <div class="debutlist_time c_tx_thin">02:51</div>
+                            </div>
+                        </li>
+                        <li class="debutlist_item">
+                            <div class="debutlist_item_box">
+                                <a href="#" class="debutlist_link mod_cover">
+                                    <img src="2.webp" alt="懂你的自由" class="debutlist_pic">
+                                    <i class="mod_cover_mask"></i>
+                                    <i class="mod_cover_icon_play"></i>
+                                </a>
+                                <div class="debutlist_cont">
+                                    <h3 class="debutlist_song">
+                                        <a href="#">懂你的自由</a>
+                                    </h3>
+                                    <p  class="debutlist_author">
+                                        <a href="#" class="c_tx_thin" title="石玺彤">石玺彤</a>
+                                    </p>
+                                </div>
+                                <div class="debutlist_time c_tx_thin">03:33</div>
+                            </div>
+                        </li>
+                        <li class="debutlist_item">
+                            <div class="debutlist_item_box">
+                                <a href="#" class="debutlist_link mod_cover">
+                                    <img src="3.webp" alt="うつくしい世界" class="debutlist_pic">
+                                    <i class="mod_cover_mask"></i>
+                                    <i class="mod_cover_icon_play"></i>
+                                </a>
+                                <div class="debutlist_cont">
+                                    <h3 class="debutlist_song">
+                                        <a href="#">うつくしい世界</a>
+                                    </h3>
+                                    <p  class="debutlist_author">
+                                        <a href="#" class="c_tx_thin" title="Aimer (エメ)">Aimer (エメ)</a>
+                                    </p>
+                                </div>
+                                <div class="debutlist_time c_tx_thin">04:05</div>
+                            </div>
+                        </li>
+                        <li class="debutlist_item">
+                            <div class="debutlist_item_box">
+                                <a href="#" class="debutlist_link mod_cover">
+                                    <img src="4.webp" alt="You are my sunshine" class="debutlist_pic">
+                                    <i class="mod_cover_mask"></i>
+                                    <i class="mod_cover_icon_play"></i>
+                                </a>
+                                <div class="debutlist_cont">
+                                    <h3 class="debutlist_song">
+                                        <a href="#">You are my sunshine</a>
+                                    </h3>
+                                    <p  class="debutlist_author">
+                                        <a href="#" class="c_tx_thin" title="古巨基">古巨基</a>
+                                        /
+                                        <a href="#" class="c_tx_thin" title="Kuson">Kuson</a>
+                                        /
+                                        <a href="#" class="c_tx_thin" title="Lorraine">Lorraine</a>
+                                    </p>
+                                </div>
+                                <div class="debutlist_time c_tx_thin">01:43</div>
+                            </div>
+                        </li>
+                        <li class="debutlist_item">
+                            <div class="debutlist_item_box">
+                                <a href="#" class="debutlist_link mod_cover">
+                                    <img src="5.webp" alt="在风里 (demo2015)" class="debutlist_pic">
+                                    <i class="mod_cover_mask"></i>
+                                    <i class="mod_cover_icon_play"></i>
+                                </a>
+                                <div class="debutlist_cont">
+                                    <h3 class="debutlist_song">
+                                        <a href="#">在风里 (demo2015)</a>
+                                    </h3>
+                                    <p  class="debutlist_author">
+                                        <a href="#" class="c_tx_thin" title="谢春花">谢春花</a>
+                                    </p>
+                                </div>
+                                <div class="debutlist_time c_tx_thin">03:51</div>
+                            </div>
+                        </li>
+                        <li class="debutlist_item">
+                            <div class="debutlist_item_box">
+                                <a href="#" class="debutlist_link mod_cover">
+                                    <img src="6.webp" alt="鸾鸣盛世" class="debutlist_pic">
+                                    <i class="mod_cover_mask"></i>
+                                    <i class="mod_cover_icon_play"></i>
+                                </a>
+                                <div class="debutlist_cont">
+                                    <h3 class="debutlist_song">
+                                        <a href="#">鸾鸣盛世</a>
+                                        <span class="debutlist_song_txt">《以闪亮之名》游戏贺岁曲</span>
+                                    </h3>
+                                    <p  class="debutlist_author">
+                                        <a href="#" class="c_tx_thin" title="关大洲">关大洲</a>
+                                    </p>
+                                </div>
+                                <div class="debutlist_time c_tx_thin">03:25</div>
+                            </div>
+                        </li>
+                        <li class="debutlist_item">
+                            <div class="debutlist_item_box">
+                                <a href="#" class="debutlist_link mod_cover">
+                                    <img src="7.jpg" alt="Puppets Can't Control You" class="debutlist_pic">
+                                    <i class="mod_cover_mask"></i>
+                                    <i class="mod_cover_icon_play"></i>
+                                </a>
+                                <div class="debutlist_cont">
+                                    <h3 class="debutlist_song">
+                                        <a href="#">Puppets Can't Control You</a>
+                                    </h3>
+                                    <p  class="debutlist_author">
+                                        <a href="#" class="c_tx_thin" title="ONE OK ROCK (ワンオクロック)">ONE OK ROCK (ワンオクロック)</a>
+                                    </p>
+                                </div>
+                                <div class="debutlist_time c_tx_thin">03:14</div>
+                            </div>
+                        </li>
+                        <li class="debutlist_item">
+                            <div class="debutlist_item_box">
+                                <a href="#" class="debutlist_link mod_cover">
+                                    <img src="8.webp" alt="밤에 내린 눈 (Snowfall at Night)" class="debutlist_pic">
+                                    <i class="mod_cover_mask"></i>
+                                    <i class="mod_cover_icon_play"></i>
+                                </a>
+                                <div class="debutlist_cont">
+                                    <h3 class="debutlist_song">
+                                        <a href="#">밤에 내린 눈 (Snowfall at Night)</a>
+                                    </h3>
+                                    <p  class="debutlist_author">
+                                        <a href="#" class="c_tx_thin" title="D.O. (都暻秀)">D.O. (都暻秀)</a>
+                                    </p>
+                                </div>
+                                <div class="debutlist_time c_tx_thin">02:59</div>
+                            </div>
+                        </li>
+                        <li class="debutlist_item">
+                            <div class="debutlist_item_box">
+                                <a href="#" class="debutlist_link mod_cover">
+                                    <img src="9.webp" alt="日落" class="debutlist_pic">
+                                    <i class="mod_cover_mask"></i>
+                                    <i class="mod_cover_icon_play"></i>
+                                </a>
+                                <div class="debutlist_cont">
+                                    <h3 class="debutlist_song">
+                                        <a href="#">日落</a>
+                                    </h3>
+                                    <p  class="debutlist_author">
+                                        <a href="#" class="c_tx_thin" title="孙燕姿">孙燕姿</a>
+                                    </p>
+                                </div>
+                                <div class="debutlist_time c_tx_thin">04:09</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+     
+     <!-- footer -->
+      <div class="footer" role="footer">
+        <div class="section_inner">
+            <div class="footer_info">
+                <div class="footer_download">
+                    <h3 class="footer_tit">下载QQ音乐客户端</h3>
+                    <ul class="footer_download_list">
+                        <li class="footer_download_list_item">
+                            <a class="js_footer_down" data-type="pc">
+                                <i class="icon_qm_pc">
+                                    <span class="icon_txt"><img src="pc.png" alt="" class="img"></span>
+                                </i>
+                                PC版
+                            </a>
+                        </li>
+                        <li class="footer_download_list_item">
+                            <a class="js_footer_down">
+                                <i class="icon_qm_mac">
+                                    <span class="icon_txt"><img src="an.png" alt="" class="img"></span>
+                                </i>
+                                Mac版
+                            </a>
+                        </li>
+                        <li class="footer_download_list_item">
+                            <a class="js_footer_down">
+                                <i class="icon_qm_android">
+                                    <span class="icon_txt"><img src="mac.png" alt="" class="img"></span>
+                                </i>
+                                Android版
+                            </a>
+                        </li>
+                        <li class="footer_download_list_item">
+                            <a class="js_footer_down">
+                                <i class="icon_qm_iphone">
+                                    <span class="icon_txt"><img src="iphone.png" alt="" class="img"></span>
+                                </i>
+                                iPhone版
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_product">
+                    <h3 class="footer_tit">特色产品</h3>
+                    <ul class="footer_product_list">
+                        <li class="footer_product_list_item footer_product_list_item--pic">
+                            <a href="#" rel="noopener noreferrer" target="_blank">
+                                <i class="icon_qm_kg"><img src="k歌.png" alt="" class="img_other"></i>
+                                全民K歌
+                            </a>
+                        </li>
+                        <li class="footer_product_list_item footer_product_list_item--pic">
+                            <a href="#" rel="noopener noreferrer" target="_blank" >
+                                <i class="icon_qm_ss"><img src="演出.png" alt="" class="img_other"></i>
+                                银河音效
+                            </a>
+                        </li>
+                        <li class="footer_product_list_item footer_product_list_item--pic">
+                            <a href="#" rel="noopener noreferrer" target="_blank">
+                                <i class="icon_qm_qp"><img src="play.png" alt="" class="img_other"></i>
+                                QPlay
+                            </a>
+                        </li>
+                        <li class="footer_product_list_item footer_product_list_item--pic">
+                            <a class="js_footer_down">
+                                <i class="icon_qm_fan"><img src="fan.png" alt="" class="img_other"></i>
+                                Fan直播伴侣
+                            </a>
+                        </li>
+                        <li class="footer_product_list_item">
+                            <a href="#" rel="noopener noreferrer" target="_blank">车载互联</a>
+                        </li>
+                        <li class="footer_product_list_item">
+                            <a href="#" rel="noopener noreferrer" target="_blank">QQ演出</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_group">
+                    <h3 class="footer_tit">TME集团官网</h3>
+                    <ul class="footer_group_list">
+                        <li class="footer_platform_list_item">
+                            <a href="#" target="_blank" class="js_other_link" rel="noopener noreferrer">腾讯音乐</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_link">
+                    <h3 class="footer_tit">合作链接</h3>
+                    <ul class="footer_link_list">
+                        <li class="footer_link_list_item">
+                            <a href="#" rel="noopener noreferrer" target="_blank">CJ ENM</a>
+                        </li>
+                        <li class="footer_link_list_item">
+                            <a href="#" rel="noopener noreferrer" target="_blank">腾讯视频</a>
+                        </li>
+                        <li class="footer_link_list_item">
+                            <a href="#" rel="noopener noreferrer" target="_blank">手机QQ空间</a>
+                        </li>
+                        <li class="footer_link_list_item">
+                            <a href="#" rel="noopener noreferrer" target="_blank">最新版QQ</a>
+                        </li>
+                        <li class="footer_link_list_item">
+                            <a href="#" rel="noopener noreferrer" target="_blank">腾讯社交广告</a>
+                        </li>
+                        <li class="footer_link_list_item">
+                            <a href="#" rel="noopener noreferrer" target="_blank">电脑管家</a>
+                        </li>
+                        <li class="footer_link_list_item">
+                            <a href="#" rel="noopener noreferrer" target="_blank">QQ浏览器</a>
+                        </li>
+                        <li class="footer_link_list_item">
+                            <a href="#" rel="noopener noreferrer" target="_blank">腾讯微云</a>
+                        </li>
+                        <li class="footer_link_list_item">
+                            <a href="#" rel="noopener noreferrer" target="_blank">腾讯云</a>
+                        </li>
+                        <li class="footer_link_list_item">
+                            <a href="#" rel="noopener noreferrer" target="_blank">企鹅FM</a>
+                        </li>
+                        <li class="footer_link_list_item">
+                            <a href="#" rel="noopener noreferrer" target="_blank">智能电视网</a>
+                        </li>
+                        <li class="footer_link_list_item">
+                            <a href="#" rel="noopener noreferrer" target="_blank">当贝市场</a>
+                        </li>
+                        <li class="footer_link_list_item">
+                            <a href="#" rel="noopener noreferrer" target="_blank">酷我音乐</a>
+                        </li>
+                        <li class="footer_link_list_item">
+                            <a href="#" rel="noopener noreferrer" target="_blank">酷狗听书</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_platform">
+                    <h3 class="footer_tit">开放平台</h3>
+                    <ul class="footer_platform_list">
+                        <li class="footer_platform_list_item">
+                            <a href="#" target="_blank" rel="noopener noreferre">QQ音乐开放平台</a>
+                        </1i>
+                        <li class="footer_platform_list_item">
+                            <a href="#" target="_blank" rel="noopener noreferre">腾讯音乐人</a>
+                        </1i>
+                        <li class="footer_platform_list_item">
+                            <a href="#" target="_blank" rel="noopener noreferre">音乐推-歌曲推广</a>
+                        </1i>
+                        <li class="footer_platform_list_item">
+                            <a href="#" target="_blank" rel="noopener noreferre">启明星Venus-词曲交易/歌曲推广</a>
+                        </1i>
+                        <li class="footer_platform_list_item">
+                            <a href="#" target="_blank" rel="noopener noreferre">TME Studio</a>
+                        </1i>
+                        <li class="footer_platform_list_item">
+                            <a href="#" target="_blank" rel="noopener noreferre">臻品音质认证</a>
+                        </1i>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_copyright">
+                <p>
+                    <a href="#" target="_blank" title="关于腾讯" rel="noopener noreferrer nofollow">关于腾讯</a>
+                    |
+                    <a href="#" target="_blank" title="About Tencent" rel="noopener noreferrer nofollow">About Tencent</a>
+                    |
+                    <a href="#" target="_blank" title="服务条款" rel="noopener noreferrer nofollow">服务条款</a>
+                    |
+                    <a href="#" target="_blank" title="用户服务协议" rel="noopener noreferrer nofollow">用户服务协议</a>
+                    |
+                    <a href="#" target="_blank" title="隐私政策" rel="noopener noreferrer nofollow">隐私政策</a>
+                    |
+                    <a href="#" target="_blank" title="权力声明" rel="noopener noreferrer nofollow">权力声明</a>
+                    |
+                    <a href="#" target="_blank" title="广告服务" rel="noopener noreferrer nofollow">广告服务</a>
+                    |
+                    <a href="#" target="_blank" title="腾讯招聘" rel="noopener noreferrer nofollow">腾讯招聘</a>
+                    |
+                    <a href="#" target="_blank" title="客服中心" rel="noopener noreferrer nofollow">客服中心</a>
+                    |
+                    <a href="#" target="_blank" title="网站导航" rel="noopener noreferrer nofollow">网站导航</a>
+                    |
+                    <a href="#" title="举报中心">举报中心</a>
+                </p>
+                <p>
+                    Copyright © 1998 - 
+                    2025
+                    Tencent.
+                    <a target="_blank" rel="nofollow noopener noreferrer" href="#" title="All Rights Reserved.">All Rights Reserved.</a>
+                </p>
+                <p>
+                    腾讯公司
+                    <a href="#" target="_blank" title="版权所有" rel="noopener noreferrer nofollow">版权所有</a>
+                    |
+                    <a href="#" target="_blank" title="营业执照" rel="noopener noreferrer">营业执照</a>
+                    |
+                    网络文化经营许可证：
+                    <a href="#" target="_blank" title="粤网文[2023]2882-203号" rel="noopener noreferrer ">粤网文[2023]2882-203号</a>
+                    |
+                    <a href="#" target="_blank" title="网络视听许可证1904073号" rel="noopener noreferrer nofollow">网络视听许可证1904073号</a>
+                    |
+                    客服电话：
+                    <a href="#" title="4006016666" rel>4006016666</a>
+                    |
+                    违法与不良信息举报邮箱：
+                    <a href="#" title="tme_musicjubao@tencentmusic. com" rel>tme_musicjubao@tencentmusic. com</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- <a class="btn_bottom_top sprite_before" style="display:none">
+        <span class="icon_txt">返回顶部</span>
+    </a> -->
+    <!-- <a class="btn_bottom_report">举报</a>
+    <a class="btn_bottom_feedback js_btn_feedback">反馈</a>
+    <a class="btn_bottom_player sprite_before">
+        <span class="icon_txt">播放器</span>
+    </a> -->
+</body>
+</html>
